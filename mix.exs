@@ -35,7 +35,7 @@ defmodule CustomRpi.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:github_releases, "petermm/#{@app}"}
+        #{:github_releases, "petermm/#{@app}"}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
